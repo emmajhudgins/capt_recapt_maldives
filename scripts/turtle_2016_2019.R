@@ -8,9 +8,8 @@ require(plotrix)
 require(R2ucare) # checks for violation of assumptions
 
 # read in the matrix-day data
-setwd('./data/')
-input=read.csv("gr_covid.csv", header=TRUE, stringsAsFactors = F) #green turtle capture history
-input2=read.csv("hk_covid.csv", header=TRUE, stringsAsFactors = F) #hawksbill turtle capture history
+input=read.csv("./data/gr_covid.csv", header=TRUE, stringsAsFactors = F) #green turtle capture history
+input2=read.csv("./data/hk_covid.csv", header=TRUE, stringsAsFactors = F) #hawksbill turtle capture history
 colnames(input2)<-colnames(input)
 
 #convert NA to 0

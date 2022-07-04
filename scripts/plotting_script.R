@@ -3,7 +3,7 @@
 ##code written by Emma J. Hudgins
 #emma.hudgins@carleton.ca
 #summary table - green turtles
-greens<-read.csv('greens-Table 1.csv')
+greens<-read.csv('./data/greens-Table 1.csv')
 # install.packages('ggplot2')
 # install.packages('viridis')
 library(ggplot2)
@@ -24,7 +24,7 @@ pop_plot
 pop_plot2<-ggplot(greens, aes(x=Period,y=Updated, col=Site))+theme_classic()+scale_color_viridis(discrete=T)+
   geom_line()+
    xlab("Time Period")+
-  ylab("Estimated population size")+scale_x_continuous(breaks=c(1:8),labels=c("May 2016","Nov 2016","May 2017","Nov 2017","May 2018","Nov 2018","May 2019","Nov 2019"))
+  ylab("Estimated population size")+  scale_x_continuous(breaks=c(1:8),labels=c("May 2016","Nov 2016","May 2017","Nov 2017","May 2018","Nov 2018","May 2019","Nov 2019"))
 pop_plot2
 greens$percent<-(greens$longterm-1)*100
 greens$lcl_percent<-(greens$lcl_longterm-1)*100
@@ -50,7 +50,7 @@ growth_plot<-ggplot(greens_sub, aes(y=percent, x=Site))+
 growth_plot
 
 #summary table - hawksbilsl
-hawks<-read.csv('hawksbills-Table 1.csv')
+hawks<-read.csv('./data/hawksbills-Table 1.csv')
 
 pop_plot<-ggplot(hawks, aes(x=Period,y=Updated, col=Site))+theme_classic()+
   scale_color_viridis(discrete=T)+
@@ -67,7 +67,7 @@ pop_plot
 pop_plot2<-ggplot(hawks, aes(x=Period,y=Updated, col=Site))+theme_classic()+scale_color_viridis(discrete=T)+
   geom_line()+
   xlab("Time Period")+
-  ylab("Estimated population size")
+  ylab("Estimated population size")+  scale_x_continuous(breaks=c(1:8),labels=c("May 2016","Nov 2016","May 2017","Nov 2017","May 2018","Nov 2018","May 2019","Nov 2019"))
 pop_plot2
 hawks$percent<-(hawks$longterm-1)*100
 hawks$lcl_percent<-(hawks$lcl_longterm-1)*100
@@ -93,8 +93,8 @@ growth_plot<-ggplot(hawks_sub, aes(y=percent, x=Site))+
 growth_plot
 
 
-survival<-read.csv('survival.csv')
-survival_gr<-subset(survival, Species=="hawks")
+survival<-read.csv('./data/survival.csv')
+survival_gr<-subset(survival, Species=="Greens")
 survival_gr_plot<-ggplot(survival_gr, aes(y=Survival..or.mean., x=Site, col=Site))+
   theme_classic()+
   scale_color_viridis(discrete=T)+
