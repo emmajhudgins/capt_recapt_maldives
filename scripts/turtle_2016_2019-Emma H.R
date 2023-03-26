@@ -107,7 +107,7 @@ runModels<-function(site,split, data, spp, time.intervals=time.intervals)
   p.het=list(formula=~mixture,share=TRUE)
   GammaDoublePrime.dot=list(formula=~1)
   GammaPrime.dot=list(formula=~1)
-  model.07=mark(data, model = "RDHet",
+  model.07=mark(data=pseudo.input, model = "RDHet",
                 time.intervals=time.intervals,
                 model.parameters=list(S=S.dot,
                                       GammaPrime=GammaPrime.dot,
@@ -288,7 +288,7 @@ runModels<-function(site,split, data, spp, time.intervals=time.intervals)
   p.het=list(formula=~mixture,share=TRUE)
   GammaDoublePrime.dot=list(formula=~1)
   GammaPrime.dot=list(formula=~1)
-  model.22=mark(data, model = "RDHet",
+  model.22=mark(data=pseudo.input, model = "RDHet",
                 time.intervals=time.intervals,
                 model.parameters=list(S=S.time,
                                       GammaPrime=GammaPrime.dot,
@@ -439,6 +439,8 @@ if(overall[3]<0.05)
 bestmod<-as.integer(rownames(results$model.table)[1])
 saveRDS(results[[bestmod]],file=paste0(unique(input2$Site)[i], "bestmod2016", spp,split,".rds") )
 }
+results<-readRDS(file=paste0('~/Desktop/OneDrive - Carleton University/Turtles/turtles_2020/',unique(input2$Site)[i], "bestmod2016", spp,split,".rds"))
+
 saveRDS(observations,file="timept_hk_observations2016.RDS")
 
 spp="gr"

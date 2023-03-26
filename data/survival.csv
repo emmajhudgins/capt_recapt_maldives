@@ -1,13 +1,13 @@
-﻿Site,Survival (or mean),lcl survival,ucl survival,Species
-Lh.Caves,89.1,82.95,93.25,Greens
-Lh.Express,85.71,69.27,94.11,Greens
-Lh.KHR,94.10842857,63.42,100,Greens
-L. HithadhooW,93,64.78,99.01,Greens
-L. Hithadhoo,99.9,81.45,91.49,Greens
-L. Olhuveli,73.5,63.22,81.77,Greens
-A.Dhidhdhoo,81.97,74.96,87.36,Hawksbills
-B. Dhonfanu,88.46,70.05,96.17,Hawksbills
-K.BHHR,83.57,76.23,88.97,Hawksbills
-KBHTR,90.54,81.56,95.39,Hawksbills
-L.Hithadhoo,76.35,0.64,0.85,Hawksbills
-L.Olhuveli,74.71,63.86,83.15,Hawksbills
+﻿Site,Survival (or mean),lcl survival,ucl survival,Survival_annual,Survival_annual_lcl,Survival_annual_ucl,Species
+Lh.Caves,89.1,82.95,93.25,79.3881,68.807025,86.955625,Greens
+Lh.Express,85.71,69.27,94.11,73.462041,47.983329,88.566921,Greens
+Lh.KHR,94.10842857,63.42,100,88.56396328,40.220964,100,Greens
+L. HithadhooW,93,64.78,99.01,86.49,41.964484,98.029801,Greens
+L. Hithadhoo,99.9,81.45,91.49,99.8001,66.341025,83.704201,Greens
+L. Olhuveli,73.5,63.22,81.77,54.0225,39.967684,66.863329,Greens
+A.Dhidhdhoo,81.97,74.96,87.36,67.190809,56.190016,76.317696,Hawksbills
+B. Dhonfanu,88.46,70.05,96.17,78.251716,49.070025,92.486689,Hawksbills
+K.BHHR,83.57,76.23,88.97,69.839449,58.110129,79.156609,Hawksbills
+KBHTR,90.54,81.56,95.39,81.974916,66.520336,90.992521,Hawksbills
+L.Hithadhoo,76.35,0.64,0.85,58.293225,0.004096,0.007225,Hawksbills
+L.Olhuveli,74.71,63.86,83.15,55.815841,40.780996,69.139225,Hawksbills
